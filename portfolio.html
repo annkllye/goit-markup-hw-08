@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/main.min.css">
+  
+
+
+</head>
+
+<body>
+<header class="header">
+  <div class="container-nav container">
+    <nav class="nav">
+      <a class="logo link" href="./index.html" lang="en">Web<span class="logo-header-studio">Studio</span></a>
+      <ul class="list nav-list">
+        <li class="nav-item"><a class="link header-nav" href="./index.html">Студія</a></li>
+        <li class="nav-item"><a class="link header-nav current" href="./portfolio.html">Портфоліо</a></li>
+        <li class="nav-item"><a class="link header-nav" href="#footer">Контакти</a></li>
+      </ul>
+      <ul class="list header-contacts">
+        <li class="header-contact-item"><a class="link link-contacts" href="mailto:info@devstudio.com"> <svg
+              class="header-icon" width="16" height="12">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg> info@devstudio.com</a></li>
+        <li class="header-contact-item"><a class="link link-contacts" href="tel:+380961111111"> <svg class="header-icon"
+              width="10" height="16">
+              <use href="./images/symbol-defs.svg#icon-phone"></use>
+            </svg> +38 096 111 11 11</a></li>
+      </ul>
+    </nav>
+    <button type="button" class="menu-open" data-Menu-open>
+      <svg class="open-header" width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-menu_40px"></use>
+      </svg>
+    </button>
+  </div>
+  <div class="mob-menu is-hidden" data-Menu>
+    <div class="container">
+      <div class="top">
+        <button type="button" class="menu-close" data-Menu-close>
+          <svg class="close-header" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="menu-list list">
+          <li class="menu-item"><a class="menu-link link" href="./index.html">Студія</a></li>
+          <li class="menu-item"><a class="menu-link link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="menu-item"><a class="menu-link link" href="#footer">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <ul class="mob-contacts list">
+          <li class="mob-contact-item"><a class="mob-contact-link link" href="mailto:info@devstudio.com"> <svg
+                class="header-icon" width="16" height="12">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg> info@devstudio.com</a></li>
+          <li class="mob-item"><a class=" mob-contact-link link" href="tel:+380961111111"> <svg class="header-icon"
+                width="10" height="16">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg> +38 096 111 11 11</a></li>
+        </ul>
+
+        <ul class="mob-social list">
+          <li class="mob-social-list__item list"><a href="" class="mob-social-link link">Instagram</a></li>
+          <li class="mob-social-list__item list"><a href="" class="mob-social-link link">Twitter</a></li>
+          <li class="mob-social-list__item list"><a href="" class="mob-social-link link">Facebook</a></li>
+          <li class="mob-social-list__item list"><a href="" class="mob-social-link link">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+  
+    <section class="filter reset-padding-bottom">
+      <div class="filter__container container">
+        <h1 class="filter__title visually-hidden">Кнопки фільтри</h1>
+        <ul class="list filter__list">
+          <li class="filter__buttons">
+            <button class="filter__btn" type="button">Усі</button>
+          </li>
+          <li class="filter__buttons"><button class="filter__btn" type="button">Веб-сайти</button></li>
+          <li class="filter__buttons"><button class="filter__btn" type="button">Додатки</button></li>
+          <li class="filter__buttons"><button class="filter__btn" type="button">Дизайн</button></li>
+          <li class="filter__buttons"><button class="filter__btn" type="button">Маркетинг</button></li>
+        </ul>
+      </div>
+    </section>
+  
+    <section class="examples section reset-padding-top">
+      <div class="examples__container container">
+        <h2 class="examples__title visually-hidden">Приклади робіт</h2>
+        <ul class="list examples__list">
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imgtech354.jpg 1x,
+                          ./images/imgtech354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imgtech370.jpg 1x,
+                          ./images/imgtech370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imgtech450.jpg 1x,
+                          ./images/imgtech450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imgtech450.jpg" alt="notebook" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Технокряк</h3>
+                <p class="examples__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imgorlean354.jpg 1x,
+                          ./images/imgorlean354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imgorlean370.jpg 1x,
+                          ./images/imgorlean370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imgorlean450.jpg 1x,
+                          ./images/imgorlean450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imgorlean450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Постер New Orlean vs Golden Star</h3>
+                <p class="examples__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imgsea354.jpg 1x,
+                          ./images/imgsea354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imgsea370.jpg 1x,
+                          ./images/imgsea370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imgsea450.jpg 1x,
+                          ./images/imgsea450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imgsea450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Ресторан Seafood</h3>
+                <p class="examples__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imgprime354.jpg 1x,
+                          ./images/imgprime354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imgprime370.jpg 1x,
+                          ./images/imgprime370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imgprime450.jpg 1x,
+                          ./images/imgprime450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imgprime450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Проєкт Prime</h3>
+                <p class="examples__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imgbox354.jpg 1x,
+                          ./images/imgbox354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imgbox370.jpg 1x,
+                          ./images/imgbox370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imgbox450.jpg 1x,
+                          ./images/imgbox450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imgbox450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Проєкт Boxes</h3>
+                <p class="examples__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imgbord354.jpg 1x,
+                          ./images/imgbord354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imgbord370.jpg 1x,
+                          ./images/imgbord370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imgbord450.jpg 1x,
+                          ./images/imgbord450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imgbord450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Inspiration has no Borders</h3>
+                <p class="examples__text">Веб-сайт</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imglim354.jpg 1x,
+                          ./images/imglim354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imglim370.jpg 1x,
+                          ./images/imglim370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imglim450.jpg 1x,
+                          ./images/imglim450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imglim450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Видання Limited Edition</h3>
+                <p class="examples__text">Дизайн</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imglab354.jpg 1x,
+                          ./images/imglab354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imglab370.jpg 1x,
+                          ./images/imglab370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imglab450.jpg 1x,
+                          ./images/imglab450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imglab450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Проєкт LAB</h3>
+                <p class="examples__text">Маркетинг</p>
+              </div>
+            </a>
+          </li>
+          <li class="examples__item">
+            <a class="link examples__link" href="#">
+              <div class="examples__wrapper">
+                <picture>
+                  <source srcset="
+                          ./images/imggrow354.jpg 1x,
+                          ./images/imggrow354@2x.jpg 2x" media="(min-width: 1200px)" />
+                  <source srcset="
+                          ./images/imggrow370.jpg 1x,
+                          ./images/imggrow370@2x.jpg 2x" media="(min-width: 768px)" />
+                  <source srcset="
+                          ./images/imggrow450.jpg 1x,
+                          ./images/imggrow450@2x.jpg 2x" media="(max-width: 767px)" />
+                  <img src="./images/imggrow450.jpg" alt="nba" />
+                </picture>
+                <p class="examples__description list">
+                  Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                  Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                  приватну особу.
+                </p>
+              </div>
+              <div class="examples__border">
+                <h3 class="examples__lable">Growing Business</h3>
+                <p class="examples__text">Додаток</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer " id="footer">
+    <div class="container">
+  
+      <div class="contacts-wrap">
+        <a class="link logo logo-foot" href="./index.html" lang="en">Web<span
+            class="logo-foooter-studio">Studio</span></a>
+        <address>
+          <ul class="list footer-list">
+            <li class="footer-item"> <a class="link footer-address cont-hover"
+                href="https://goo.gl/maps/FNzLWQuzZqBwpCxM9" target="_blank" rel="noopener noreferrer nofollow">м. Київ,
+                пр-т Лесі Українки, 26</a> </li>
+            <li class="footer-item"> <a class="link footer-cont cont-hover"
+                href="mailto:info@devstudio.com">info@devstudio.com</a> <br></li>
+            <li class="footer-item"> <a class="link footer-cont cont-hover" href="tel:+380961111111">+38 096
+                111 11
+                11</a> </li>
+          </ul>
+        </address>
+      </div>
+      <div class="invite-container">
+        <p class="footer-text">приєднуйтесь</p>
+        <ul class="social-list list footer-sl">
+          <li class="social-list__item list"><a href="" class="link-social link footer-link-social"> <svg class="footer-icon"
+                width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+              </svg></a></li>
+          <li class="social-list__item list"><a href="" class="link-social link footer-link-social"><svg class="footer-icon"
+                width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+              </svg></a></li>
+          <li class="social-list__item list"><a href="" class="link-social link footer-link-social"><svg class="footer-icon"
+                width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-fb"></use>
+              </svg></a></li>
+          <li class="social-list__item list"><a href="" class="link-social link footer-link-social"><svg class="footer-icon"
+                width="20" height="20">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+              </svg></a></li>
+        </ul>
+      </div>
+      <div class="form-wrap">
+        <p class="footer-form-title">Підпишіться на розсилку</p>
+        <form class="sub-form">
+          <div class="footer-form">
+            <label for="sub-email"></label>
+            <input type="email" class="sub-input" name="sub-email" placeholder="E-mail" required id="sub-email">
+            <div class="btn-cont">
+              <button type="submit" class="btn-sub">Підписатися</button>
+              <svg class="icon-sub" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-sub"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+<script src="./js/menu.js"></script>
+</body>
+
+</html>

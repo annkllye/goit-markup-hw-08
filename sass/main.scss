@@ -1,0 +1,30 @@
+@import './utils/vars';
+
+@import './base/reset';
+@import './utils/hide';
+@import './base/common';
+
+@import './components/conteiner';
+@import './components/section';
+@import './components/img';
+@import './components/modal';
+@import './components/form-footer';
+@import './components/btn-filtrs';
+
+
+@import './layouts/portfolio-filter';
+@import './layouts/portfolio-cards';
+
+@import './layouts/header';
+
+@import './layouts/hero';
+@import './layouts/clients';
+
+@import './layouts/team';
+@import './layouts/work';
+
+@import './layouts/benefits';
+// @import './layouts/portfolio';
+
+
+@import './layouts/footer';

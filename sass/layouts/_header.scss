@@ -298,6 +298,10 @@ margin-left: 25px;
 
 .mob-social-link {
   color: #2196F3;
+  font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
 }
 .mob-contact-item:not(last-child) {
   margin-bottom: 32px;
@@ -328,9 +332,13 @@ margin-left: 25px;
     margin-right: 10px;
     margin-left: 10px;
   }
+    .mob-social{
+      flex-wrap: wrap;
+    }
 
 
 .header-nav.current {
+  display: flex;
   color: #2196F3;
 
 }
